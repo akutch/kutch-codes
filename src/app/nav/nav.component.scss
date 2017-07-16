@@ -8,7 +8,7 @@
     cursor: pointer;
     display: block;
     height: 40px;
-    padding: 0.5em 0 0 0.5em;
+    padding: 1em 0 0 1em;
 
     @media all and ( min-width: 700px ) {
         display: none;
@@ -16,10 +16,15 @@
 }
 
 .ak-nav-items {
+    color: $ak-coral;
     display: none;
     font-size: $ak-medium-font;
     line-height: $ak-medium-line-height;
     list-style: none;
+
+    &--light {
+        color: $ak-white;
+    }
 
     @media all and ( min-width: 700px ) {
         display: block;
@@ -27,7 +32,6 @@
 }
 
 .ak-nav-item {
-    color: $ak-coral;
     cursor: pointer;
     padding-bottom: 0.5em;
     padding-top: 2em;
@@ -37,4 +41,8 @@
     background-color: $ak-coral;
     height: 0.10em;
     width: 1em;
+
+    &--light {
+        background-color: $ak-white;
+    }
 }

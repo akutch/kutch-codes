@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router, NavigationStart } from '@angular/Router';
 import { fadeInAnimation } from '../animations/fade-in-animation'
 
 @Component({
@@ -10,7 +11,11 @@ import { fadeInAnimation } from '../animations/fade-in-animation'
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  @Input() isGradientBackground = this.isGradientBackground;
+
+  constructor() {
+
+  }
 
   ngOnInit() {
   }
