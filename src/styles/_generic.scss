@@ -1,0 +1,12 @@
+.ak-link {
+    color: $ak-teal;
+    text-decoration: none;
+
+    &:hover {
+        color: $ak-light-blue;
+    }
+
+    &:visited {
+        color: $ak-coral;
+    }
+}
