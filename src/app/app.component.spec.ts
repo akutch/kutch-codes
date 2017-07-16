@@ -1,10 +1,14 @@
 import { TestBed, async } from '@angular/core/testing';
+import { APP_BASE_HREF } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
+import { LandingComponent } from './landing/landing.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { RoutingModule } from './routing/routing.module';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -14,8 +18,16 @@ describe('AppComponent', () => {
         NavComponent,
         AboutComponent,
         WorkComponent,
-        ContactComponent
+        ContactComponent,
+        LandingComponent,
+        PageNotFoundComponent
       ],
+      imports: [
+        RoutingModule
+      ],
+      providers: [
+        { provide: APP_BASE_HREF, useValue: '/' }
+      ]
     }).compileComponents();
   }));
 
@@ -29,12 +41,5 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('ak');
-  }));
-
-  it('should render title in a h1 tag', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain("Hello, I'm Anna");
   }));
 });

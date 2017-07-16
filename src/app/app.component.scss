@@ -1,21 +1,15 @@
 @import '~styles.scss';
 
-
 .ak {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
     height: 100%;
+    justify-content: space-between;
 }
 
-.ak-landing-content {
-    display: flex;
-    justify-content: center;
+.ak-page {
     align-items: center;
+    display: flex;
     flex-grow: 3;
-}
-
-.ak-pages {
-    display: none;
+    justify-content: center;
 }
