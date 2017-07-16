@@ -4,19 +4,37 @@
     flex-grow: 1;
 }
 
+.ak-nav-hamburger {
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    padding: 0.5em 0 0 0.5em;
+
+    @media all and ( min-width: 700px ) {
+        display: none;
+    }
+}
+
 .ak-nav-items {
+    display: none;
+    font-size: $ak-medium-font;
+    line-height: $ak-medium-line-height;
     list-style: none;
+
+    @media all and ( min-width: 700px ) {
+        display: block;
+    }
 }
 
 .ak-nav-item {
+    color: $ak-coral;
     cursor: pointer;
-    color: $ak-blue;
     padding-bottom: 0.5em;
     padding-top: 2em;
 }
 
 .ak-nav-line {
+    background-color: $ak-coral;
     height: 0.10em;
     width: 1em;
-    background-color: $ak-blue;
 }

@@ -1,0 +1,35 @@
+@import '~styles.scss';
+
+.ak-image-container {
+    display: flex;  
+    justify-content: center;
+}
+
+.ak-image {
+    box-shadow: $ak-transparent-gray -40px -42px 88px;
+    height: 285px;
+    transition: height 200ms;
+
+    @media screen and ( min-width: 62.5em ) { /* 1000px */
+        height: 350px;
+    }
+}
+
+.ak-caption {
+    background: $ak-blue;
+    background: linear-gradient(to bottom right, $ak-light-blue, $ak-teal);
+    color: $ak-white;
+    font-size: $ak-small-font;
+    line-height: $ak-small-line-height;
+    margin: 20px 0 0 0;
+    padding: 2em;
+    position: relative;
+    text-align: left;
+    transition: all 200ms;
+    width: 300px;
+
+    @media screen and ( min-width: 62.5em ) { /* 1000px */
+        margin: -60px 0 0 200px;
+        width: 400px;
+    }
+}
