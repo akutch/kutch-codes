@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 /* Modules */
 import { RoutingModule } from './routing/routing.module';
@@ -25,6 +26,7 @@ import { LandingComponent } from './landing/landing.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RoutingModule
   ],
   providers: [],

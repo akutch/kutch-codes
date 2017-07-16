@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, Router, NavigationStart } from '@angular/router';
 
 import { LandingComponent } from '../landing/landing.component';
 import { AboutComponent } from '../about/about.component';
@@ -42,4 +42,4 @@ const routes: Routes = [
 
 export class RoutingModule {
 
- }
+}
