@@ -1,0 +1,15 @@
+@import '_variables';
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: $ak-light-gray;
+    font-family: Courier New, Courier, monospace;
+}
+
+h1 {
+    font-weight: normal;
+    margin: 0;
+}

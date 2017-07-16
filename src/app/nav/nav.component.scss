@@ -1,0 +1,22 @@
+@import '~styles.scss';
+
+.ak-nav {
+    flex-grow: 1;
+}
+
+.ak-nav-items {
+    list-style: none;
+}
+
+.ak-nav-item {
+    cursor: pointer;
+    color: $ak-blue;
+    padding-bottom: 0.5em;
+    padding-top: 2em;
+}
+
+.ak-nav-line {
+    height: 0.10em;
+    width: 1em;
+    background-color: $ak-blue;
+}

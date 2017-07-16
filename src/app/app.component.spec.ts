@@ -1,12 +1,20 @@
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
+import { NavComponent } from './nav/nav.component';
+import { AboutComponent } from './about/about.component';
+import { WorkComponent } from './work/work.component';
+import { ContactComponent } from './contact/contact.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        NavComponent,
+        AboutComponent,
+        WorkComponent,
+        ContactComponent
       ],
     }).compileComponents();
   }));
@@ -17,16 +25,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   }));
 
-  it(`should have as title 'app'`, async(() => {
+  it(`should have as title 'ak'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('app');
+    expect(app.title).toEqual('ak');
   }));
 
   it('should render title in a h1 tag', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain("Welcome to Anna's Website!");
+    expect(compiled.querySelector('h1').textContent).toContain("Hello, I'm Anna");
   }));
 });
