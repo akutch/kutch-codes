@@ -1,0 +1,12 @@
+@import '~styles.scss';
+
+.ak-modal {
+    background: $ak-white;
+    box-shadow: $ak-transparent-gray -40px 42px 88px;
+    color: $ak-dark-gray;
+    height: 80vh;
+    left: 15vw;
+    position: absolute;
+    top: 10vh;
+    width: 70vw;
+}

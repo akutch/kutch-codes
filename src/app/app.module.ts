@@ -13,6 +13,7 @@ import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LandingComponent } from './landing/landing.component';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LandingComponent } from './landing/landing.component';
     ContactComponent,
     WorkComponent,
     PageNotFoundComponent,
-    LandingComponent
+    LandingComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
