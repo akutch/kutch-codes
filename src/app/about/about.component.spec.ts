@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AboutComponent } from './about.component';
+import { fadeInAnimation } from '../animations/fade-in-animation'
 
 describe('AboutComponent', () => {
   let component: AboutComponent;

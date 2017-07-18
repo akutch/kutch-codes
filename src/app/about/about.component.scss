@@ -1,1 +1,97 @@
 @import '~styles.scss';
+
+.ak-content-area {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.ak-arrow {
+    cursor: pointer;
+    padding-bottom: 2em;
+    transition: opacity 300ms;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.ak-map {
+    height: 60vh; 
+    transition: height 300ms;
+
+    @media all and ( min-width: 45.625em ) { /* 730px */
+        height: 80vh;
+    }
+}
+
+.ak-content-area__item {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    transition: all 300ms;
+    
+    @media all and ( min-width: 43.75em ) { /* 700px */
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+.ak-content-area__key {
+    background: $ak-light-gray;
+    border: 1px solid $ak-dark-gray;
+    color: $ak-dark-gray;
+    display: block;
+    margin-bottom: -0.5em;
+    margin-right: 0;
+    padding: 1em 2em;
+    transition: all 300ms;
+
+    @media all and ( min-width: 43.75em ) { /* 700px */
+        margin-bottom: 0;
+        margin-right: -1.5em;
+    }
+        
+}
+
+.ak-content-area__value {
+    color: $ak-dark-gray;
+    font-size: $ak-large-font;
+    padding-bottom: 1em;
+    padding-top: 0;
+    transition: all 300ms;
+
+    @media all and ( min-width: 43.75em ) { /* 700px */
+        font-size: $ak-extra-large-font;
+        padding-bottom: 0;
+        padding-top: 2em;
+    }
+}
+
+.ak-map__box {
+
+    fill: $ak-dark-teal;
+    fill-opacity: 0;
+
+    &--active {
+        cursor: pointer;
+
+        &:hover {
+            fill-opacity: 1;
+        }
+    }
+
+    &--hover {
+        fill-opacity: 1;
+    }
+}
+
+.ak-map__label {
+    fill: $ak-white;
+    font-size: $ak-large-font; 
+
+    &--active {
+        cursor: pointer;
+    }
+}
