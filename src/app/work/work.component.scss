@@ -1,1 +1,12 @@
 @import '~styles.scss';
+
+.ak-work {
+    display: flex;
+    justify-content: center;
+    line-height: $ak-medium-line-height;
+    width: 80vw;
+
+    @media all and (min-width: 43.75em) { /* 700px */
+        width: 50vw;
+    }
+}
