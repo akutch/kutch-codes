@@ -8,7 +8,7 @@
         class="ak-nav__hamburger-menu">
       <div class="ak-nav__hamburger-header">
         <div>Anna Kutch</div>
-        <img class="ak-close-x" src="../assets/images/x.svg" alt="close" />  
+        <img (click)="toggleMobileMenu()" class="ak-close-x" src="../assets/images/x.svg" alt="close" />  
       </div>
       <div class="ak-nav-items--mobile">
         <div routerLink="home" class="ak-nav-item ak-nav-item--mobile" (click)="toggleMobileMenu()">Home</div>
