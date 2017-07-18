@@ -9,4 +9,5 @@
     position: absolute;
     top: 10vh;
     width: 70vw;
+    z-index: 1; /* to overlap landing page content */
 }

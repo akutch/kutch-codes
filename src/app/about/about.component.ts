@@ -10,8 +10,7 @@ import { growAndFadeInOutAnimaiton } from '../animations/grow-and-fade-in-out-an
   host: {'[@fadeInAnimation]': ''}
 })
 export class AboutComponent implements OnInit, AfterViewInit {
-  // @ViewChild('lineOne') lineOne: ElementRef;
-  // akDarkTeal = '#367184';
+
   isModalShown = false;
   modalContent = '';
 
