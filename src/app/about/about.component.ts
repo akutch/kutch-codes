@@ -1,12 +1,11 @@
 import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { fadeInAnimation } from '../animations/fade-in-animation'
-import { growAndFadeInOutAnimaiton } from '../animations/grow-and-fade-in-out-animation'
 
 @Component({
   selector: 'ak-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
-  animations: [fadeInAnimation, growAndFadeInOutAnimaiton],
+  animations: [fadeInAnimation],
   host: {'[@fadeInAnimation]': ''}
 })
 export class AboutComponent implements OnInit, AfterViewInit {
@@ -31,18 +30,22 @@ export class AboutComponent implements OnInit, AfterViewInit {
       "value": "Graduated Cum Laude"
     },
     {
-      "key": "Clubs & Groups",
+      "key": "Clubs + Groups",
       "value": "AXO, ACM, Upsilon Pi Epsilon"
     }
   ];
   maFacts = [
     {
-      "key": "Work",
+      "key": "Employer",
       "value": "Fidelity Investments"
     },
     {
       "key": "Role",
       "value": "Cognitive Computing UX Developer"
+    },
+    {
+      "key": "Certifications",
+      "value": "AWS Certified Developer Associate"
     }
   ];
 

@@ -1,13 +1,17 @@
 @import '_variables';
 @import '_generic';
 
+// fonts 
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Roboto+Mono:300,400');
+
 html, body {
     height: 100%;
 }
 
 body {
     color: $ak-dark-gray;
-    font-family: Courier New, Courier, monospace;
+    font-family: $ak-body-font;
+    font-weight: $ak-body-font-weight;
     margin: 0;
 }
 
@@ -22,4 +26,8 @@ li {
 
 figure {
     margin: 0;
+}
+
+nav {
+    display: flex;
 }

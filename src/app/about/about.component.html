@@ -1,6 +1,6 @@
 <div>  
-  <div class="ak-content-area" *ngIf="isContentAreaShown" [@growAndFadeInOutAnimaiton]>
-      <img class="ak-arrow" (click)="hideContentArea()" src="../../assets/images/arrow.svg" alt="arrow" />
+  <div class="ak-content-area" *ngIf="isContentAreaShown" [@fadeInAnimation]>
+      <img class="ak-arrow" (click)="hideContentArea(); clemsonHover = false; maHover = false;" src="../../assets/images/arrow.svg" alt="arrow" />
 
       <div class="ak-content-area__item" *ngFor="let fact of facts">
           <div class="ak-content-area__key">{{fact.key}}</div>
@@ -8,7 +8,7 @@
       </div>
 
   </div>
-    <svg *ngIf="!isContentAreaShown" [@growAndFadeInOutAnimaiton] class="ak-map" width="738px" height="849px" viewBox="0 0 738 849" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <svg *ngIf="!isContentAreaShown" [@fadeInAnimation] class="ak-map" width="738px" height="849px" viewBox="0 0 738 849" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <polygon fill="#FFFFFF" fill-opacity="0.23" points="1.96766381 650.260119 5.91049775e-05 658.053997 6.74127731 675.465732 14.9379556 670.817716 42.3818743 669.1084 42.4820572 669.129974 61.4583013 673.255206 76.7304364 693.551264 102.338554 686.206584 104.650446 677.876624 129.883543 682.172965 142.606185 700.678142 163.4268 718.593452 160.863417 751.769076 161.177855 756.885498 167.776039 756.041183 174.730035 758.512658 167.493517 771.998641 175.678079 785.901609 185.094389 788.093222 188.466328 800.302537 213.065228 822.962499 225.501802 848.713651 245.613157 845.660288 255.716562 820.97598 254.582929 783.820227 227.905011 736.332038 234.771531 730.764053 201.694317 669.775696 201.677472 669.636208 200.232651 657.706164 184.104085 652.471531 182.255872 668.446129 171.800793 666.665887 168.509532 660.60674 89.4326871 658.865508 84.0414266 648.18051"></polygon>
             <polygon fill="#FFFFFF" fill-opacity="0.23" points="181.417941 565.00967 173.49285 553.360375 152.864622 538.247232 150.743935 521.682471 143.19623 522.144081 131.764145 515.025773 135.937843 504.004468 103.421239 506.095897 103.311304 503.29639 65.6366095 506.124268 86.9019893 598.841655 86.8863265 598.969913 81.8491048 640.556175 90.3522424 657.407595 169.398944 659.148237 172.756698 665.329731 180.967265 666.727859 182.843553 650.508862 200.332716 656.185304 206.184404 623.702686 206.21307 623.632056 212.709003 607.562003 204.792482 600.795961 193.259623 571.61081"></polygon>
