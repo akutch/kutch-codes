@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { fadeInAnimation } from '../animations/fade-in-animation'
+import { fadeInAnimation } from '../animations/fade-in-animation';
 
 @Component({
   selector: 'ak-page-not-found',

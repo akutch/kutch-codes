@@ -10,18 +10,18 @@ export class AppComponent {
   title = 'ak';
   isGradientBackground = false;
 
-  constructor(private router: Router) {
+  constructor( private router: Router ) {
 
     // listen for route change events
     router.events.forEach((event) => {
-      
+
       // only for NavigationStart events
-      if(event instanceof NavigationStart) {
+      if ( event instanceof NavigationStart ) {
 
         // if we are going to the About page change, set isGradientBackground to true 
-         if(event.url === '/about') {
+         if ( event.url === '/about' ) {
           this.isGradientBackground = true;
-        } 
+        }
         // for all other pages, set isGradientBackground to false
         else {
             this.isGradientBackground = false;

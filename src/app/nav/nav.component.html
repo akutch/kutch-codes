@@ -11,7 +11,7 @@
         <img (click)="toggleMobileMenu()" class="ak-close-x" src="../assets/images/x.svg" alt="close" />  
       </div>
       <div class="ak-nav-items--mobile">
-        <div routerLink="home" class="ak-nav-item ak-nav-item--mobile" (click)="toggleMobileMenu()">Home</div>
+        <div routerLink="/" class="ak-nav-item ak-nav-item--mobile" (click)="toggleMobileMenu()">Home</div>
         <div class="ak-nav-line ak-nav-line--mobile"></div>
         <div routerLink="about" class="ak-nav-item ak-nav-item--mobile" (click)="toggleMobileMenu()">About</div>
         <div class="ak-nav-line ak-nav-line--mobile"></div>
@@ -24,7 +24,7 @@
   
   <!-- left side menu -->
   <ul class="ak-nav-items" [ngClass]="{ 'ak-nav-items--light': isGradientBackground }">
-    <li routerLink="home" class="ak-nav-item">Home</li>
+    <li routerLink="/" class="ak-nav-item">Home</li>
     <li class="ak-nav-line" [ngClass]="{ 'ak-nav-line--light': isGradientBackground }"></li>
     <li routerLink="about" class="ak-nav-item">About</li>
     <li class="ak-nav-line" [ngClass]="{ 'ak-nav-line--light': isGradientBackground }"></li>

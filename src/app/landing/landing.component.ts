@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { fadeInAnimation } from '../animations/fade-in-animation'
+import { fadeInAnimation } from '../animations/fade-in-animation';
 
 @Component({
   selector: 'ak-landing',
@@ -7,7 +7,6 @@ import { fadeInAnimation } from '../animations/fade-in-animation'
   styleUrls: ['./landing.component.scss'],
   animations: [fadeInAnimation],
   host: {'[@fadeInAnimation]': ''}
-  
 })
 export class LandingComponent implements OnInit {
 

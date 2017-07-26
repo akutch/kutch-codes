@@ -1,13 +1,13 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { growAndFadeInOutAnimaiton } from '../animations/grow-and-fade-in-out-animation'
+import { growAndFadeInOutAnimaiton } from '../animations/grow-and-fade-in-out-animation';
 
-/* 
+/*
 
-sample use: 
+sample use:
 
-<ak-modal (closeModal)="closeModal($event)" 
-          [isModalShown]="isModalShown" 
-          [modalContent]="modalContent"></ak-modal> 
+<ak-modal (closeModal)="closeModal($event)"
+          [isModalShown]="isModalShown"
+          [modalContent]="modalContent"></ak-modal>
 */
 
 @Component({
