@@ -21,12 +21,8 @@ const routes: Routes = [
         component: ContactComponent
     },
     {
-        path: 'home',
-        component: LandingComponent
-    },
-    {
         path: '',
-        redirectTo: '/home',
+        component: LandingComponent,
         pathMatch: 'full'
     },
     {
