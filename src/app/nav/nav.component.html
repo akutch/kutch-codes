@@ -15,6 +15,8 @@
         <div class="ak-nav-line ak-nav-line--mobile"></div>
         <div routerLink="about" class="ak-nav-item ak-nav-item--mobile" (click)="toggleMobileMenu()">About</div>
         <div class="ak-nav-line ak-nav-line--mobile"></div>
+        <div routerLink="skills" class="ak-nav-item ak-nav-item--mobile" (click)="toggleMobileMenu()">Skills</div>
+        <div class="ak-nav-line ak-nav-line--mobile"></div>
         <div routerLink="work" class="ak-nav-item ak-nav-item--mobile" (click)="toggleMobileMenu()">Work</div>
         <div class="ak-nav-line ak-nav-line--mobile"></div>
         <div routerLink="contact" class="ak-nav-item ak-nav-item--mobile" (click)="toggleMobileMenu()">Contact</div>
@@ -27,6 +29,8 @@
     <li routerLink="/" class="ak-nav-item">Home</li>
     <li class="ak-nav-line" [ngClass]="{ 'ak-nav-line--light': isGradientBackground }"></li>
     <li routerLink="about" class="ak-nav-item">About</li>
+    <li class="ak-nav-line" [ngClass]="{ 'ak-nav-line--light': isGradientBackground }"></li>
+    <li routerLink="skills" class="ak-nav-item">Skills</li>
     <li class="ak-nav-line" [ngClass]="{ 'ak-nav-line--light': isGradientBackground }"></li>
     <li routerLink="work" class="ak-nav-item">Work</li>
     <li class="ak-nav-line" [ngClass]="{ 'ak-nav-line--light': isGradientBackground }"></li>

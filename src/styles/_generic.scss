@@ -15,3 +15,37 @@
     cursor: pointer;
     height: 1.2em; 
 }
+
+.ak-heading {
+    color: $ak-transparent-gray;
+    display: block;
+    font-family: $ak-heading-font;
+    font-size: $ak-xxl-font;
+    font-weight: $ak-heading-font-weight;
+    transition: font-size 300ms;   
+    
+    @media all and ( min-width: 43.75em ) { /* 700px */
+        font-size: $ak-xxxl-font;
+    }
+}
+
+.ak-sub-heading {
+    font-size: $ak-medium-font;
+    padding-bottom: 1.5em; /* 24px */
+    padding-top: 0.5em; /* 8px */
+    transition: font-size 300ms; 
+    
+    @media all and ( min-width: 43.75em ) { /* 700px */
+        font-size: $ak-large-font;
+    }
+}
+
+.ak-page-content {
+    height: 90vh;
+
+    &--centered {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LandingComponent } from './landing/landing.component';
 import { ModalComponent } from './modal/modal.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ModalComponent } from './modal/modal.component';
     WorkComponent,
     PageNotFoundComponent,
     LandingComponent,
-    ModalComponent
+    ModalComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,
