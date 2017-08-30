@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SkillsComponent } from './skills.component';
 
@@ -8,7 +9,8 @@ describe('SkillsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SkillsComponent ]
+      declarations: [ SkillsComponent ],
+      imports: [ BrowserAnimationsModule ]
     })
     .compileComponents();
   }));

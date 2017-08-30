@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { LandingComponent } from './landing.component';
 
@@ -8,7 +9,8 @@ describe('LandingComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LandingComponent ]
+      declarations: [ LandingComponent ],
+      imports: [ BrowserAnimationsModule ]
     })
     .compileComponents();
   }));
@@ -23,10 +25,10 @@ describe('LandingComponent', () => {
     expect(component).toBeTruthy();
   });
 
-    it('should render title in a h1 tag', async(() => {
+    it('should render caption correctly', async(() => {
     const fixture = TestBed.createComponent(LandingComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain("Hello, I'm Anna");
+    expect(compiled.querySelector('caption').textContent).toContain("Hello, my name is Anna Kutch. I’m a developer in Boston, MA. I specialize in creating pixel-perfect experiences. I love Angular, Sketch, AWS, and running. Let's collaborate!");
   }));
 });

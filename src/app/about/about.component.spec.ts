@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AboutComponent } from './about.component';
+import { ModalComponent } from '../modal/modal.component'; 
 import { fadeInAnimation } from '../animations/fade-in-animation'
 
 describe('AboutComponent', () => {
@@ -9,7 +11,13 @@ describe('AboutComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AboutComponent ]
+      declarations: [ 
+        AboutComponent, 
+        ModalComponent 
+      ],
+      imports: [
+        BrowserAnimationsModule
+      ]
     })
     .compileComponents();
   }));
@@ -17,6 +25,7 @@ describe('AboutComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(AboutComponent);
     component = fixture.componentInstance;
+    component.modalContent = '';
     fixture.detectChanges();
   });
 

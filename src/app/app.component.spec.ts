@@ -7,8 +7,12 @@ import { AboutComponent } from './about/about.component';
 import { WorkComponent } from './work/work.component';
 import { ContactComponent } from './contact/contact.component';
 import { LandingComponent } from './landing/landing.component';
+import { ModalComponent } from './modal/modal.component';
+import { SkillsComponent } from './skills/skills.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+
 import { RoutingModule } from './routing/routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -20,10 +24,13 @@ describe('AppComponent', () => {
         WorkComponent,
         ContactComponent,
         LandingComponent,
-        PageNotFoundComponent
+        PageNotFoundComponent,
+        ModalComponent,
+        SkillsComponent
       ],
       imports: [
-        RoutingModule
+        RoutingModule,
+        BrowserAnimationsModule
       ],
       providers: [
         { provide: APP_BASE_HREF, useValue: '/' }
