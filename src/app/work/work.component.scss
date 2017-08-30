@@ -1,12 +1,35 @@
 @import '~styles.scss';
 
-.ak-work {
-    display: flex;
-    justify-content: center;
-    line-height: $ak-medium-line-height;
-    width: 80vw;
+ak-work {
+    width: 100%;
+}
 
-    @media all and (min-width: 43.75em) { /* 700px */
-        width: 50vw;
+.ak-work-items {
+    flex-direction: column;
+    flex-grow: 1;
+    display: flex;
+
+    @media all and ( min-width: 43.75em ) { /* 700px */
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+.ak-work-item {
+    align-items: center;
+    background: $ak-gradient;
+    color: $ak-white;
+    cursor: pointer;
+    display: flex;
+    flex-basis: 50%;
+    flex-grow: 1;
+    font-size: $ak-extra-large-font;
+    height: 30vh;
+    justify-content: center;
+    margin: 1em;
+    min-height: 3em;
+
+    &:hover {
+        background: $ak-dark-gradient;
     }
 }
