@@ -27,7 +27,7 @@ export class NavComponent implements OnInit {
   // close mobile menu on 'Escape' key
   @HostListener('window:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
-    if ( event.keyCode === 27 ) {
+    if ( event.code === 'Escape' ) {
       this.mobileMenuShown = false;
     }
   }

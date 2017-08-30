@@ -24,4 +24,19 @@ describe('NavComponent', () => {
   it('should be created', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should be able to toggle the mobile menu', () => {
+    expect(component.mobileMenuShown).toBeFalsy();
+    component.toggleMobileMenu();
+    expect(component.mobileMenuShown).toBeTruthy();
+  });
+
+  it('should be able to handle escape key event', () => {
+    component.mobileMenuShown = true;
+    const event = new KeyboardEvent("keydown",{
+      "code": "Escape",
+    });
+    component.handleKeyboardEvent(event)
+    expect(component.mobileMenuShown).toBeFalsy();
+  });
 });
