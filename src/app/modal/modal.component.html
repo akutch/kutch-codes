@@ -1,3 +1,14 @@
-<div [@growAndFadeInOutAnimaiton] *ngIf="isModalShown" class="ak-modal">
-  <span (click)="onCloseModal()">close</span>
-</div>
+<div [@slideLeftRightAnimation] 
+     *ngIf="isModalShown" 
+     class="ak-modal" 
+     [class.ak-modal--clemson]="modalContent === 'clemson'">
+
+  <div *ngIf="modalContent === 'clemson'" 
+       class="ak-modal__title--clemson">National Champions!</div>
+  <span *ngIf="modalContent !== 'clemson'" (click)="onCloseModal()">close</span>
+
+</div> 
+
+<div #tigerRain 
+     [ngClass]="{'tigers': isModalShown, 'tigers--hidden': !isModalShown}" >
+</div> 

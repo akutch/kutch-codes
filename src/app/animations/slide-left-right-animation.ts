@@ -1,23 +1,23 @@
 import { trigger, transition, style, animate } from '@angular/animations';
 
-export const growAndFadeInOutAnimaiton = trigger(
-    'growAndFadeInOutAnimaiton',
+export const slideLeftRightAnimation = trigger(
+    'slideLeftRightAnimation',
     [
         transition(
             ':enter', [
-                style({ opacity: 0, transform: 'scale(0.5)' }),
+                style({ opacity: 0, transform: 'translateX(50%)' }),
                 animate(
                     '300ms ease-in-out',
-                    style({ opacity: 1, transform: 'scale(1)' })
+                    style({ opacity: 1, transform: 'translateX(0)' })
                 )
             ]
         ),
         transition(
             ':leave', [
-                style({ opacity: 1, transform: 'scale(1)' }),
+                style({ opacity: 1, transform: 'translateX(0)' }),
                 animate(
                     '300ms ease-in-out',
-                    style({ opacity: 0, transform: 'scale(0.5)' }),
+                    style({ opacity: 0, transform: 'translateX(50%)' }),
                 )
             ]
         )

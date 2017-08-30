@@ -9,6 +9,16 @@
     &:visited {
         color: $ak-coral;
     }
+
+    &--space-around {
+        padding: 0 1em;
+    }
+}
+
+.ak-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .ak-close-x {
@@ -45,6 +55,11 @@
 
     &--centered {
         align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &--flex {
         display: flex;
         flex-direction: column;
     }

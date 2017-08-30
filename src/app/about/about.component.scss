@@ -95,3 +95,14 @@
         cursor: pointer;
     }
 }
+
+.ak-animation-trigger {
+    color: $ak-white;
+    cursor: pointer;
+    text-decoration: underline;
+
+    &:hover,
+    &:visited {
+        color: $ak-coral;
+    }
+}

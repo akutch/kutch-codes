@@ -12,6 +12,11 @@ $ak-white:      #FFFFFF;
 // transparent colors
 $ak-transparent-gray: rgba(0, 0, 0, .14);
 
+// gradients
+$ak-gradient: linear-gradient(to bottom right, $ak-light-blue, $ak-teal);
+$ak-dark-gradient: linear-gradient(to bottom right, $ak-dark-teal, $ak-light-blue);
+$ak-coral-gradient: linear-gradient(to bottom right, $ak-coral, $ak-dark-coral);
+
 // font sizes
 $ak-xs-font:            0.75em; /* 12px */
 $ak-small-font:         0.875em; /* 14px */

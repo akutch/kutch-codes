@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { fadeInAnimation } from '../animations/fade-in-animation';
 
 @Component({
@@ -6,7 +6,8 @@ import { fadeInAnimation } from '../animations/fade-in-animation';
   templateUrl: './work.component.html',
   styleUrls: ['./work.component.scss'],
   animations: [fadeInAnimation],
-  host: {'[@fadeInAnimation]': ''}
+  host: {'[@fadeInAnimation]': ''},
+  encapsulation: ViewEncapsulation.None
 })
 export class WorkComponent implements OnInit {
 

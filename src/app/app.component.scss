@@ -10,7 +10,7 @@
 
     &--gradient-background {
         background-color: $ak-light-blue;
-        background: linear-gradient(to bottom right, $ak-light-blue, $ak-teal);
+        background: $ak-gradient;
         color: $ak-white;
     }
 

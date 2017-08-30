@@ -10,13 +10,13 @@ import { fadeInAnimation } from '../animations/fade-in-animation';
 })
 export class AboutComponent implements OnInit, AfterViewInit {
 
-  isModalShown = false;
-  modalContent = '';
+  isClemsonAnimationShown: boolean = false;
+  modalContent: string = 'clemson';
 
-  isContentAreaShown = false;
-  contentArea = '';
-  facts = [];
-  scFacts = [
+  isContentAreaShown: boolean = false;
+  contentArea: string = '';
+  facts: Array<Object> = [];
+  scFacts: Array<Object> = [
     {
       'key': 'College',
       'value': 'Clemson'
@@ -34,14 +34,14 @@ export class AboutComponent implements OnInit, AfterViewInit {
       'value': 'AXO, ACM, Upsilon Pi Epsilon'
     }
   ];
-  maFacts = [
+  maFacts: Array<Object> = [
     {
       'key': 'Employer',
-      'value': 'Fidelity Investments'
+      'value': 'Hubspot'
     },
     {
       'key': 'Role',
-      'value': 'Cognitive Computing UX Developer'
+      'value': 'Software Engineer'
     },
     {
       'key': 'Certifications',
@@ -85,6 +85,14 @@ export class AboutComponent implements OnInit, AfterViewInit {
       this.contentArea = '';
     }, 500);
 
+  }
+
+  goTigers() {
+    this.isClemsonAnimationShown = true;
+  }
+
+  closeModal() {
+    this.isClemsonAnimationShown = false;
   }
 
 }
