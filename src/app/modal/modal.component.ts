@@ -69,7 +69,7 @@ export class ModalComponent implements OnChanges, OnInit {
       //add in a new raindrop with various randomizations to certain CSS properties
       tigers += `<div class="tiger" 
                       style="animation-delay: 0.${animationTiming}s; 
-                             animation-duration: 1.${animationTiming}s;
+                             animation-duration: 2.${animationTiming}s;
                              left: ${distFromLeft}vw; 
                              top: ${smallIncrement + smallIncrement - 75}px;">
                   </div>`;
